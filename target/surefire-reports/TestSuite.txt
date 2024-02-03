@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 55.274 s <<< FAILURE! - in TestSuite
+runScenario(RunnerFile.TestRunner)  Time elapsed: 15.453 s  <<< FAILURE!
+java.lang.AssertionError: expected [No data] but found [Beetroot]
+

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-06T15:08:01 IST" name="Default suite" finished-at="2023-12-06T15:08:57 IST" duration-ms="55682">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-06T15:08:01 IST" name="Default test" finished-at="2023-12-06T15:08:57 IST" duration-ms="55682">
+      <class name="RunnerFile.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" started-at="2023-12-06T15:08:01 IST" name="setUpClass" finished-at="2023-12-06T15:08:02 IST" duration-ms="818" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5cd8d029]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" started-at="2023-12-06T15:08:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-06T15:08:21 IST" duration-ms="18783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Product search functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product purchase functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" started-at="2023-12-06T15:08:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-06T15:08:25 IST" duration-ms="3653" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the logo"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product purchase functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "PageObjects.LandingPage.getlogo()" because "this.LP" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "PageObjects.LandingPage.getlogo()" because "this.LP" is null
+at StepDefinations.LandingPageSearch.i_should_be_able_match_the_logo(LandingPageSearch.java:83)
+at ✽.i should be able match the logo(file:///C:/Automation/ptc02/src/test/java/FeatureFiles/PurchaseItems.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" started-at="2023-12-06T15:08:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-06T15:08:40 IST" duration-ms="15213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Product search functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" started-at="2023-12-06T15:08:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-06T15:08:55 IST" duration-ms="15476" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Product search functionality"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product Search functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [No data] but found [Beetroot]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [No data] but found [Beetroot]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at StepDefinations.DealPageSearch.i_search_usting_short_name_and_should_be_able_to_mach_both_results(DealPageSearch.java:46)
+at ✽.I search usting short name Beet and should be able to mach both results(file:///C:/Automation/ptc02/src/test/java/FeatureFiles/VerifySearchResults.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:RunnerFile.TestRunner@6f10d5b6]" started-at="2023-12-06T15:08:55 IST" name="tearDownClass" finished-at="2023-12-06T15:08:57 IST" duration-ms="1666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- RunnerFile.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
